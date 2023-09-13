@@ -13,7 +13,8 @@ async function fetchFunc() {
   console.log(receiver)
 
   // PHPの送信先
-  const url = 'http://localhost:3000/index.php';
+  const url = 'https://dumdum0727.zombie.jp/generatorSample/index.php';
+  // const url = 'http://localhost:3000/index.php';
 
   // 送信するデータを定義
   const data = {
