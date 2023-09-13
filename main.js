@@ -7,9 +7,10 @@ e.preventDefault();
 
 async function fetchFunc() {
   // フォームの情報を取得する
-  const receiver = document.querySelector("input[name='receiver']").value;
-  const message = document.querySelector("textarea[name='message']").value;
-  const sender = document.querySelector("input[name='sender']").value;
+  const receiver = document.querySelector(".receiver").value;
+  const message = document.querySelector(".message").value;
+  const sender = document.querySelector(".sender").value;
+  console.log(receiver)
 
   // PHPの送信先
   const url = 'http://localhost:3000/index.php';
@@ -35,7 +36,6 @@ async function fetchFunc() {
   }
   
   // レスポンスのデータを取得
-  console.log(response)
   const json = await response.json();
 
   // レスポンスデータを表示
